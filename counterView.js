@@ -4,6 +4,7 @@ class CounterView {
 
     const incrementButtonEl = document.querySelector('#increment-btn');
     const decrementButtonEl = document.querySelector('#decrement-btn');
+    const resetButtonEl = document.querySelector('#reset-btn');
 
     incrementButtonEl.addEventListener('click', () => {
       // Increment on the model, then refresh the view
@@ -16,6 +17,12 @@ class CounterView {
       this.model.decrement();
       this.display();
     });
+
+    resetButtonEl.addEventListener('click', () => {
+      // reset on the model, then refresh the view
+      this.model.reset();
+      this.display();
+    }); 
   }
 
   display() {

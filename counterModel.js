@@ -16,7 +16,7 @@ class CounterModel {
   }
 
   reset() {
-  return this.counter = 0
+  return this.counter = 0;
   }
 }
 
