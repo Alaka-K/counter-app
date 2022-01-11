@@ -14,6 +14,10 @@ class CounterModel {
   decrement() {
     this.counter--;
   }
+
+  reset() {
+  return this.counter = 0
+  }
 }
 
 module.exports = CounterModel;
